@@ -1,2 +1,2 @@
 
-Map showing some of the major Ghost towns in Colorado, utilizing React, Leaflet and GeoJSON.
+Map showing some of the major ghost towns in Colorado, utilizing React, Leaflet and GeoJSON.
