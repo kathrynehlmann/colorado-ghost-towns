@@ -1,15 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
+// Mandatory styles for leaflet
+import 'leaflet/dist/leaflet.css';
 
 class Maps extends React.Component {
   constructor() {
     super()
     this.state = {
-      lat: 51.505,
-      lng: -0.09,
-      zoom: 13
+      lat: 39.533489,
+      lng: -107.783302,
+      zoom: 8
     }
   }
 
