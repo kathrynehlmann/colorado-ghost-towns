@@ -1,8 +1,10 @@
 import React from 'react';
-import {Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
+import {Map, TileLayer, Marker } from 'react-leaflet';
+// import L from 'leaflet';
 // Mandatory styles for leaflet
 import 'leaflet/dist/leaflet.css';
+
+import GhostTowns from "./GhostTowns";
 
 class Maps extends React.Component {
   constructor() {
@@ -22,11 +24,8 @@ render(){
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url='http://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png'
         />
-        <Marker position={position}>
-          <Popup>
-            This is a popup.
-          </Popup>
-        </Marker>
+        <Marker position={position} />
+        <GhostTowns />
       </Map>
     )
   }
